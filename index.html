@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khawpun - Profile (MyPage v2)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Animation กล้วยและช็อกโกแลตโปรยลงมา -->
+    <div class="falling-container">
+        <span class="falling-item" style="left: 5%; animation-duration: 7s; animation-delay: 0s;">🍫</span>
+        <span class="falling-item" style="left: 15%; animation-duration: 9s; animation-delay: 2s;">🍌</span>
+        <span class="falling-item" style="left: 25%; animation-duration: 6s; animation-delay: 1s;">🍫</span>
+        <span class="falling-item" style="left: 35%; animation-duration: 8s; animation-delay: 3s;">🍌</span>
+        <span class="falling-item" style="left: 45%; animation-duration: 7s; animation-delay: 0.5s;">🍫</span>
+        <span class="falling-item" style="left: 55%; animation-duration: 10s; animation-delay: 2.5s;">🍌</span>
+        <span class="falling-item" style="left: 65%; animation-duration: 6.5s; animation-delay: 1.5s;">🍫</span>
+        <span class="falling-item" style="left: 75%; animation-duration: 8.5s; animation-delay: 0.2s;">🍌</span>
+        <span class="falling-item" style="left: 85%; animation-duration: 7.5s; animation-delay: 3.5s;">🍫</span>
+        <span class="falling-item" style="left: 95%; animation-duration: 9.5s; animation-delay: 1.8s;">🍌</span>
+    </div>
+
+    <!-- Navigation Bar พร้อม Anchor Link Smooth Scroll -->
+    <nav class="navbar">
+        <div class="nav-brand">Khawpun Space ✨</div>
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#favorites">Favorites</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero / Profile Section (จัด Layout ด้วย Table ตามโจทย์) -->
+        <header class="card hero-card">
+            <table class="profile-table">
+                <tr>
+                    <td class="profile-img-cell">
+                        <img src="กาย.jpg" alt="Profile Image" class="circle-img">
+                    </td>
+                    <td class="profile-info-cell">
+                        <h1>ยูกิโตะ ฮิการุ <span>(Khawpun)</span></h1>
+                        <p class="badge">สาขาวิชา CAI — กลุ่มเรียน G2</p>                        
+                        <p><strong>สถาบันการศึกษา:</strong> Panyapiwat Institute of Management</p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+        <!-- Section: About Me -->
+        <section id="about" class="card">
+            <h2>📝 About Me</h2>
+            <div class="about-grid">
+                <div class="info-box">
+                    <h3>เหตุผลที่อยากเรียน Full Stack Web Development</h3>
+                    <p>ต่อยอดทักษะเดิมอย่างก้าวกระโดด: นำพื้นฐาน Java, Python และ Data Structures ที่มี มาเชื่อมต่อกันเป็นระบบที่ทำงานได้จริงแบบ Complete System คุมได้ทั้งระบบ เข้าใจภาพรวมทั้งหมด ตั้งแต่การออกแบบหน้าตา UI, Logic หลังบ้านและ Database ไปจนถึงการ deploy บน Cloud เห็นผลลัพธ์ทันที: ได้สร้างชิ้นงานที่จับต้องได้ สั่ง Run แล้วเห็นหน้าเว็บตอบสนองทันที ทำให้สนุกและอินกับโปรเจกต์ได้ง่าย ความยืดหยุ่นในสายอาชีพ: ตลาดต้องการสูง ตอบโจทย์ทั้งการต่อยอดงานสาย Software, การทำ Side Project ของตัวเอง หรือการรับงาน Freelance</p>
+                </div>
+                <div class="info-box">
+                    <h3>ความคาดหวังต่อวิชานี้</h3>
+                    <p>คาดหวังว่าจะเข้าใจการทำงานของระบบเว็บ</p>
+                </div>
+                <div class="info-box weakness-box">
+                    <h3>จุดอ่อนที่ต้องพัฒนา & แนวทางการพัฒนา</h3>
+                    <ul>
+                        <li><strong>สับสนระหว่างภาษา:</strong> เรียนทั้ง Java, Python และ Web Dev พร้อมกัน ทำให้สับสน Syntax <br>👉 <em>แนวทาง:</em> วางแผนก่อนเขียน (Design First) วาด Diagram หรือ Pseudocode ก่อนแตะคีย์บอร์ด</li>
+                        <li><strong>พึ่งพาการสุ่มหา Bug:</strong> ใช้ print() แทน IDE Debugger <br>👉 <em>แนวทาง:</em> ฝึกตั้ง Breakpoints และตรวจค่าตัวแปรผ่าน IDE Debugger ให้ชิน</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Experience -->
+        <section id="experience" class="card">
+            <h2>💼 ประสบการณ์การทำงาน & กิจกรรม</h2>
+            <div class="table-responsive">
+                <table class="styled-table exp-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Work Place / Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ปี 67</td>
+                            <td>ต่อ arduino</td>
+                        </tr>
+                        <tr>
+                            <td>ปี 66</td>
+                            <td>แข่งโครงงานวิทยาศาสตร์</td>
+                        </tr>
+                        <tr>
+                            <td>ปี 65</td>
+                            <td>แข่งเปตอง</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Skills & Power Level (Table 4 columns) -->
+        <section id="skills" class="card">
+            <h2>⚡ Skills & Level</h2>
+            <div class="table-responsive">
+                <table class="styled-table skills-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java Programming</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>English</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>⭐⭐⭐</td>
+                            <td>日本語 (Japanese)</td>
+                            <td>⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Favorites (CSS Grid: Desktop 4, Tablet 2, Mobile 1) -->
+        <section id="favorites" class="card">
+            <h2>🍌 สิ่งที่ชอบ 3 อย่าง & ความน่ารักของลิง</h2>
+            <div class="cards-grid">
+                <div class="fav-card">
+                    <div class="card-icon">🍌</div>
+                    <h3>กล้วย</h3>
+                    <p>อร่อย มีประโยชน์ เติมพลังได้ดีเยี่ยม</p>
+                </div>
+                <div class="fav-card">
+                    <div class="card-icon">🥛</div>
+                    <h3>นม</h3>
+                    <p>ดื่มแล้วสดชื่น ได้สุขภาพและแคลเซียม</p>
+                </div>
+                <div class="fav-card">
+                    <div class="card-icon">🍫</div>
+                    <h3>ช็อกโกแลต</h3>
+                    <p>เข้มข้น หวานกลมกล่อม เพิ่มอารมณ์ดี</p>
+                </div>
+                <div class="fav-card extra-card">
+                    <img src="ลิง.jfif" alt="Ling With Suit" class="monkey-suit-img">
+                    <a href="https://youtu.be/Yk1uCWWUl-4?si=YpF04vF76I6Vinr4" target="_blank" class="cute-link">ชมความน่ารักของลิงต่อ 🎬</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© Khawpun Profile | <a href="https://github.com/phakawin2019tg-hash" target="_blank">GitHub Profile</a> | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
